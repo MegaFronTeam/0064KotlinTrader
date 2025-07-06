@@ -18,6 +18,11 @@ class JSCCommon {
 		Fancybox.defaults.autoFocus = false;
 		Fancybox.defaults.placeFocusBack = false;
 
+		Fancybox.bind("[data-fancybox]", {
+			autoFocus: false,
+			placeFocusBack: false,
+		});
+
 		Fancybox.bind(link, {
 			arrows: false,
 			// // infobar: false,
@@ -48,12 +53,8 @@ class JSCCommon {
 			},
 		});
 		document.querySelectorAll(".modal-close-js").forEach(el => {
-			el.addEventListener("click", event => {
-				event.preventDefault();
-				const instance = Fancybox.getInstance();
-				if (instance) {
-					instance.close();
-				}
+			el.addEventListener("click", () => {
+				Fancybox.close();
 			});
 		});
 

@@ -1,0 +1,67 @@
+mixin sStartRobots(data)
+	// start sStartRobots
+	+b.SECTION.sStartRobots.section#sStartRobots&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				img(src="img/title-decor.svg", alt="").res-i
+				h3  От Рубля до Биткоина:
+				h2 Запускайте роботов там, где Вам выгодно
+				p С помощью Титана Вы можете создавать стратегии на любых рынках и торговых инструментах, которые есть в Вашем Metatrader 5. <br> Примеры, где Вы можете создавать трендовых роботов:
+			+e.row-wrap
+				+e.row.row
+					mixin item(t, list, imgs)
+						.col
+							+b.sStartRobots-item 
+									+e.title.h4!= t
+									if list
+										ul
+											each item in list
+												li #{item}
+									+e.footer
+										p брокер:
+										each img in imgs
+											img(src=img, alt=t).res-i
+					+item(
+						`Фьючерсы <br> Мосбиржи:`,
+						["Si (доллар/рубль)", "RTS (индекс)", "GOLD, BR (нефть)", "и т.д." ],
+						["img/brocker-1.png"]
+						) 
+					+item(
+						`Фьючерсы <br> Мосбиржи:`,
+						["Сбербанк",
+							"Газпром",
+							"Лукойл", 
+							"Яндекс",
+							"и т.д."],
+						["img/brocker-1.png"]
+						)
+					+item(
+						`Российский  <br> Форекс:`,
+						["USD/RUB",
+							"CNY/RUB",
+							"и т.д."],
+						["img/brocker-2.png", "img/brocker-3.png"]
+						)
+					+item(
+						`Фондовые   <br> индексы:`,
+						["Nasdaq",
+							"S&P 500",
+							"и т.д."],
+						["img/brocker-3.png", "img/brocker-4.png", 
+							"img/brocker-5.png"]
+						)
+					+item(
+						`Криптовалюты  <br> (CFD): `,
+						["BTCUSDT",
+							"ETHUSDT",
+							"и т.д."],
+						["img/brocker-3.png", "img/brocker-4.png"]
+						)
+			p.fz-lg Ограничений нет. Вы можете анализировать даже экзотические рынки, такие как фьючерсы на пшеницу или апельсиновый сок. Главное, чтобы Ваш брокер предоставлял Вам торговый терминал Metatrader 5.
+			h3 Таймфреймы: любые, от М1 до D1.
+
+			+e.panel.panel-with-bg.bg-wrap.text-center
+				+img("img/panel-bg.jpg",'bg').picture-bg
+				h3.mb-4 Один конструктор – безграничные возможности. Диверсифицируйте портфель роботов по разным рынкам для максимальной стабильности.
+				a.btn.btn-primary(href="#sForm") Создать портфель торговых роботов 
+	// end sStartRobots

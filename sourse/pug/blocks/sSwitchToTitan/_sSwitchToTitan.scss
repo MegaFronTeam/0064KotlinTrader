@@ -1,0 +1,71 @@
+// start .sSwitchToTitan
+.sSwitchToTitan {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	table {
+		vertical-align: middle;
+		font-size: 20px;
+		text-wrap: balance;
+		min-width: rem(1100);
+		.strong {
+		}
+	}
+
+	td,
+	th {
+		width: calc(100% / 3);
+		padding: rem(25) 0;
+		padding-right: rem(24);
+		&:last-child {
+			padding: rem(24);
+			background: linear-gradient(180deg, #f8f8f8 0%, #f6f6f6 100%);
+		}
+	}
+	thead {
+		th:last-child {
+			border-radius: 16px 16px 0 0;
+		}
+	}
+
+	tbody {
+		tr:last-child td:last-child {
+			border-radius: 0 0 16px 16px;
+		}
+	}
+
+	tbody {
+		th,
+		td {
+			border-top: 1px solid #e0e4ea;
+		}
+	}
+	&__table-wrap {
+		overflow-x: auto;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sSwitchToTitan

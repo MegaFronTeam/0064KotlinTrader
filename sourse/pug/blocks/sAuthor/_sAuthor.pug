@@ -1,0 +1,35 @@
+mixin sAuthor(data)
+	// start sAuthor
+	+b.SECTION.sAuthor.section(style="background: linear-gradient(180deg, #F6FCFF 0%, #F6FCFF 100%")#sAuthor&attributes(attributes)
+		.container
+			+b.section-title.text-center 
+				img(src="img/title-decor.svg", alt="").res-i
+				h2 Владимир Чамин
+				h3 Автор-разработчик Титана
+				
+			+e.row.row
+				+e.col-img.col-lg-6.text-center
+					+b.sAuthor-img
+						img(src="img/sAuthor.png", alt="Владимир Чамин")
+				+e.col-list.col-lg-6
+					ul
+						li Алгоритмический трейдер и управляющий, в трейдинге с 2003 года.
+						li Разработчик технологий для упрощения автоматического трейдинга: Titan, Neurobot, Autotrend, TradingVision.PRO, Cyclon. 
+
+						li Согласно опросу, 80% учеников заявили, что бросили бы трейдинг, если бы не получили доступ к одной из этих технологий.
+						li В кризисном 2014 году установил личный рекорд доходности в автоматическом трейдинге: +253% прибыли к депозиту
+						li 5 учеников Владимира профессионально управляют капиталом инвесторов
+						li 11 лет руководил офисом Альпари в Екатеринбурге, знает индустрию трейдинга изнутри
+						li Учился у лучших мировых алгоритмических трейдеров: Томас Неснедал (Чехия), Кевин Дейви (США), Эрнест Чан (США), Андреас Е. Кленоу (Швейцария), Том Бассо (США).
+	// end sAuthor
+	.section(style="background: linear-gradient(180deg, #F6FCFF 0%, #F6FCFF 100%);")
+		.container
+			.h3.text-center.mb-4 Титан – это концентрат моего 20-летнего опыта: только то, что реально работает и стабильно приносит деньги. Ничего лишнего
+			.fz-lg.mb-4 Вот что говорят ученики, которые пользуются моими разработками:
+			+defSlider()
+				- for (var i = 1; i < 16; i++) 
+					//- +e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/st-review-${i}.png`): +img(`img/st-review-${i}.png`).res-i
+					//- +e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/results/img-${i}.png`)
+					//- 	img(src=`img/results/img-${i}.png` width="640" height="389" alt="").res-i 
+					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/photo.png`)
+						img(src=`img/photo.png` width="640" height="389" alt="").res-i 

@@ -1,0 +1,62 @@
+// start .sHelpCry
+.sHelpCry {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(30)};
+		margin-bottom: 60px;
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	&__item {
+		text-wrap: balance;
+		padding: 24px;
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			padding-right: 150px;
+		}
+		position: relative;
+		border-radius: 16px;
+		height: 100%;
+		z-index: 2;
+		p {
+			max-width: 400px;
+			font-size: 20px;
+		}
+		img {
+			@include media-breakpoint-up(sm) {
+				position: absolute;
+				right: 24px;
+				z-index: -1;
+				bottom: 0;
+				margin: 0;
+			}
+			display: block;
+			margin-top: -60px;
+			margin-left: auto;
+			margin-bottom: -24px;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sHelpCry

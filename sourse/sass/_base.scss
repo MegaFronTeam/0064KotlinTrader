@@ -269,6 +269,10 @@ ul {
 	position: relative;
 }
 
+.control-wrap {
+	position: relative;
+}
+
 .swiper-button-hand {
 	width: var(--swiperArrowSize);
 	height: var(--swiperArrowSize);
@@ -285,6 +289,9 @@ ul {
 	box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
 	@include mt;
 	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:hover {
 		background-color: var(--swiperBgDefHover);
@@ -293,7 +300,10 @@ ul {
 	}
 
 	.icon {
-		font-size: rem(12);
+		font-size: rem(20);
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 3;
 	}
 
 	&::after {
@@ -306,6 +316,19 @@ ul {
 	&-prev {
 		left: var(--swiperArrowPosition);
 	}
+}
+
+.swiper-button-hand {
+	// --swiperBgDef: #{$pink};
+	// --swiperColorDef: #{$body-color};
+	// --swiperBorderColorDef: #{$pink};
+
+	// --swiperBgDefHover: #{$red};
+	// --swiperBorderColorDefHover: #{$red};
+	// --swiperColorDefHover;
+	z-index: 50;
+	// border: 2px solid var(--swiperBorderColorDef);
+	border-radius: rem(16);
 }
 
 .swiper-pagination {
@@ -494,4 +517,39 @@ iframe {
 		justify-content: center;
 		--bs-gutter-y: 1rem;
 	}
+}
+
+.fz-lg {
+	font-size: rem(20);
+}
+
+.video-block {
+	margin-inline: auto;
+	max-width: 900px;
+	margin-top: 64px;
+	h3 {
+		margin-bottom: 2rem;
+	}
+	iframe {
+		aspect-ratio: 16 / 9;
+		border: none;
+		border-radius: 16px;
+	}
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #000;
+	border: 0px solid #000;
+	min-width: 190px;
+
+	&:hover {
+		background-color: darken(#fff, 5%);
+	}
+}
+
+.form-control {
+	border-width: 0 0 1px 0;
+	margin-bottom: 1em;
+	text-align: center;
 }

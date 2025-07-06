@@ -1,0 +1,45 @@
+// start .sPrivateProfit
+.sPrivateProfit {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(32)};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+		padding: min(64px, 4vw);
+		border-radius: 24px;
+		height: 100%;
+		border: 1px solid var(--Grey3, #e0e4ea);
+	}
+	p {
+		font-size: 20px;
+	}
+	ul {
+		margin-left: 20px;
+	}
+	.privacy_agreement_block {
+		display: inline-block;
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sPrivateProfit

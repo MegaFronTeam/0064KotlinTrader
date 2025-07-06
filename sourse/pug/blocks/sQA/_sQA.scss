@@ -3,35 +3,6 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 
-	.container {
-		position: relative;
-		z-index: 2;
-		&::after,
-		&::before {
-			/* Ellipse 35 */
-			content: "";
-			z-index: -1;
-			position: absolute;
-			width: 792.03px;
-			height: 792.03px;
-			left: -664.78px;
-			top: 0px;
-			opacity: 0.5;
-			background: #6346e4;
-			filter: blur(445px);
-		}
-
-		&::after {
-			left: auto;
-			left: -700px;
-			top: auto;
-			bottom: -300px;
-		}
-	}
-	@include media-breakpoint-up(md) {
-		--sTPB: #{rem(50)};
-	}
-
 	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
@@ -72,13 +43,14 @@
 
 	&__head {
 		cursor: pointer;
+		font-weight: bold;
 		// font-weight: 500;
 		// line-height: 120%;
-		@include rfs(28px);
+		@include rfs(32px);
 		display: flex;
 		// gap: rem(10);
 		position: relative;
-		color: var(--color, currentColor);
+		// color: var(--color, currentColor);
 		// justify-content: space-between;
 		// align-items: center;
 		margin-bottom: 0;
@@ -128,10 +100,11 @@
 		padding: rem(40px);
 		// padding-right: rem();
 
-		background: rgba(99, 70, 228, 0.1);
-		border-radius: 19px;
+		// background: rgba(99, 70, 228, 0.1);
+		// border-radius: 19px;
+		border-bottom: 1px solid var(--Grey3, #e0e4ea);
+		background: var(--White, #fff);
 		margin-bottom: 4px;
-		border: 1px solid transparent;
 		&:last-child {
 			margin-bottom: 0;
 		}

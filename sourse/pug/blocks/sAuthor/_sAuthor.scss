@@ -1,0 +1,80 @@
+// start .sAuthor
+.sAuthor {
+	// --sPT: #{rem()};
+	--sPB: #{rem(0)};
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		max-width: 1500px;
+		aspect-ratio: 1537 / 72;
+		z-index: -1;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		border-radius: 1537.334px;
+		background: #000;
+		opacity: 0.2;
+
+		filter: blur(85.69999694824219px);
+		overflow: hidden;
+	}
+	// --sTPB: #{rem()};
+	&__col-img {
+		align-self: flex-end;
+	}
+	&__col-list {
+		align-self: center;
+	}
+	&__row {
+		// align-items: center;
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.container {
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	ul {
+		padding-block: 2rem;
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+		padding-left: 2em;
+		font-size: 20px;
+		margin-bottom: 1em;
+		&::before {
+			content: url("../img/mark.svg");
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+		img {
+			max-width: 100%;
+		}
+	}
+} // end.sAuthor

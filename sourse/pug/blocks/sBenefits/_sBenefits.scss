@@ -1,0 +1,83 @@
+// start .sBenefits
+.sBenefits {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	table {
+		min-width: 900px;
+	}
+	tr {
+		border-bottom: 1px solid var(--Grey3, #e0e4ea);
+	}
+	td,
+	th {
+		padding: rem(24) 0;
+		font-size: 20px;
+		vertical-align: top;
+		text-wrap: balance;
+	}
+	th {
+		padding-right: 20px;
+	}
+	ul {
+		padding-left: 20px;
+	}
+
+	&__table-wrap {
+		overflow-x: auto;
+	}
+	&__panel {
+		.text-block {
+			position: relative;
+			font-size: 20px;
+			z-index: 2;
+			max-width: 900px;
+			p {
+				max-width: 670px;
+			}
+		}
+		.res-i {
+			max-width: 100%;
+			border-radius: inherit;
+			margin-left: auto;
+			display: block;
+			@include media-breakpoint-up(xxl) {
+				position: absolute;
+				margin: 0;
+			}
+			margin-bottom: -5rem;
+			@include media-breakpoint-up(lg) {
+				margin-top: -4rem;
+				margin-right: -5rem;
+			}
+			margin-right: -1.25rem;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sBenefits

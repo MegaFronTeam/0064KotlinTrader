@@ -18,6 +18,15 @@ include ../blocks/sTasks/_sTasks.pug
 include ../blocks/sTitan/_sTitan.pug
 include ../blocks/s4SuperProperties/_s4SuperProperties.pug
 include ../blocks/sProfitableRobot/_sProfitableRobot.pug
+include ../blocks/sStartRobots/_sStartRobots.pug
+include ../blocks/sProfitsSetting/_sProfitsSetting.pug
+include ../blocks/sChanges/_sChanges.pug
+include ../blocks/sAuthor/_sAuthor.pug
+include ../blocks/sSwitchToTitan/_sSwitchToTitan.pug
+include ../blocks/sPrivateProfit/_sPrivateProfit.pug
+include ../blocks/sBenefits/_sBenefits.pug
+include ../blocks/sHelpCry/_sHelpCry.pug
+include ../blocks/sWithTitanToday/_sWithTitanToday.pug
 include ../blocks/footer/_footer.pug
 
 block variables
@@ -42,8 +51,15 @@ block pagecontent
 		+sTitan
 		+s4SuperProperties
 		+sProfitableRobot
-		//- +sCatalog
+		+sStartRobots
+		+sProfitsSetting
+		+sChanges
+		+sAuthor
+		+sSwitchToTitan
+		+sPrivateProfit
+		+sBenefits
 		+sForm()
-		+sContact()
 		+sQA
+		+sHelpCry()
+		+sWithTitanToday
 	+footer

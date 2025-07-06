@@ -8,11 +8,25 @@ mixin ddGroup()
 			+ddGroupItem('вопрос2')
 			+ddGroupItem('вопрос3')
 
-mixin ddGroupItem(txt, activeClasses='')
+mixin ddGroupItem(txt, activeClasses='', sub)
 	//-хедеру и контенту => .dd-head-js, .dd-content-js
 	//-!!! они должни вкладиваться в 1 контейнер(+e.item) header стилизируеться от етого контейнера, внутри хедера втавлять что душе угодно
 	+e.item(class=activeClasses)
-		+e.head.dd-head-js=txt
+		+e.head.dd-head-js
+			div
+				div=txt
+				.text-secondary= sub
+			+e.arrow
+				<svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
+					<path d="M1 0.347656L9 8.34649L1 16.3465" stroke="url(#paint0_linear_10018_3985)"/>
+					<defs>
+					<linearGradient id="paint0_linear_10018_3985" x1="1" y1="0.347656" x2="9.28431" y2="0.570774" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#2671B2"/>
+					<stop offset="1" stop-color="#0088FF"/>
+					</linearGradient>
+					</defs>
+					</svg>
+
 		+e.content.dd-content-js(class=activeClasses)
 			if block
 				block

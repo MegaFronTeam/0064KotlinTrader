@@ -1,16 +1,91 @@
 mixin sForm()
 	// start sForm
-	+b.SECTION.sForm.section#sForm&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sForm
+	+b.SECTION.sForm.section.bg-wrap#sForm&attributes(attributes)
+
+			+img("img/sForm-bg.jpg",'bg').picture-bg
+			
+			.container
 				
-			+e.row.row
-			+form-wrap
-				+input("",'')
-				+input("",'')
-				+input("",'')
-				+input("",'')
-				+e.btn.btn.btn-primary(type="submit") Submit
-				+policy
+				+b.form-wrap#sForm
+						.text-center.mb-4
+							h2 Ваш Титан ждет своего запуска!
+							h3 Введите Ваши данные в форму, выберите пакет доступа  к Титану и начните создавать свою уникальную армию  торговых роботов прямо сейчас.
+						<div id="bf349" class="inbfrm v2">
+							<div id="bf349_inner"> 
+								<form id="bf349_form" action="//info-dvd.ru/bbm/order/price_table_null_tradingvisionpro/?bform_id=349" method="POST" accept-charset="windows-1251" onsubmit="return bf349.check();" >
+									<input type="hidden" name="good_id" value="price_table_null_tradingvisionpro">
+									<input type="hidden" name="bform_id" value="349">
+									<input type="hidden" name="comment_author" value="">
+									<input type="hidden" name="comment_text" value="">
+									<input type="hidden" name="promocode" value="">
+									<div class="form-grid ">
+										<div class="input_line form-group "> 
+											<input name="fullname" type="text" class="text form-control" value="" placeholder="Ваше имя" required="required"/>
+										</div>
+										<div class="input_line form-group "> 
+											<input name="phone" type="text" class="text form-control" value="" placeholder="+7 (____)____-___-___" required="required"/>
+										</div>
+										<div class="input_line form-group "> 
+											<input name="email" type="email" class="text form-control" value="" placeholder="E-mail (необязательно)" required="required"/>
+										</div>
+										<div class="submit_line">
+											<button type="submit" class="button btn btn-white" name="submit" > Отправить</button>
+										</div>
+									</div>
+
+									<div class="privacy_agreement_block">
+										<label>
+											<input type="checkbox" class="form-check-input" name="oferta_warn" value="1" checked="checked" required="required"> <span class="ibfm_txt">Я согласен с условиями</span> <a href="javascript:void(0)" onclick="return window['bf349'].popup(`https://info-dvd.ru/bbm/../../oferta?popup=1`, `win`, 1050, 450); return false;">публичной оферты</a>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+						script.
+							window.setTimeout(function() {
+								(function (d, w, src, r, c) {
+									var rid = r.toString().substr(2);
+									var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),
+										f = function () { n.parentNode.insertBefore(s, n); };
+									var p=d.location.protocol;
+									if (p!='http:' && p!='https:' && src.indexOf('//')==0){src='http:'+src}
+									s.type = "text/javascript";
+									s.async = true;
+									s.src = src+(src.indexOf('?')==-1 ? '?' : '&')+'r='+rid;
+									if (w.opera == "[object Opera]") {
+										d.addEventListener("DOMContentLoaded", f, false);
+									} else {
+											f();
+										}
+									if (c) {
+										s.addEventListener('load', function (e) {
+											c(null, e);
+										}, false);
+									}
+								})(document, window, "//info-dvd.ru/bbm/js/bbm_form.js", Math.random(), function(){
+									window['bf349'] = new BbmFormMng({
+										id: 'bf349',
+										langs: {
+											errors : {
+												email_pattern: 'Введите корректный адрес электронной почты.',
+												alphanumeric_pattern: 'Может содержать только маленькие английские буквы и цифры',
+												phone_pattern: 'Некорректный формат телефона',
+												zip_pattern: 'Некорректный формат почтового индекса',
+												empty_field: 'Это поле необходимо заполнить.',
+												min_limit: 'Укажите значение не меньше ',
+												oferta_warn: 'Необходимо согласиться с условиями публичной оферты!'
+											},
+											processing: 'Обработка...'
+										}, rules: {
+											kupon:['alphanumeric'],
+												phone:['phone', 'required'],
+												email:['required', 'email'],
+											fullname:['required']
+										},
+									phone_verification: false});
+								});
+							}, 0);
+				+e.img-wrap.d-none.d-lg-block
+					img(src="img/header-img-2-1.png", alt="").res-i
+					img(src="img/header-img.png", alt="").res-i
 	// end sForm

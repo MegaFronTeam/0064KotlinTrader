@@ -19,16 +19,7 @@
 	}
 	&__col {
 	}
-	&__video-block {
-		margin-inline: auto;
-		max-width: 900px;
-		margin-top: 64px;
-		iframe {
-			aspect-ratio: 16 / 9;
-			border: none;
-			border-radius: 16px;
-		}
-	}
+
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {
