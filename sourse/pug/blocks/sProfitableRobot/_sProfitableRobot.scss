@@ -1,0 +1,112 @@
+// start .sProfitableRobot
+.sProfitableRobot {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+		min-width: 1000px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: rem(65) 8px;
+	}
+	&__row-wrap {
+		overflow-x: auto;
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__video-block {
+		margin-inline: auto;
+		max-width: 900px;
+		margin-top: 64px;
+		iframe {
+			aspect-ratio: 16 / 9;
+			border: none;
+			border-radius: 16px;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sProfitableRobot
+
+.sProfitableRobot-item {
+	color: #fff;
+	grid-row: span 2;
+	&__inner {
+		border-radius: 16px;
+		background: var(--linear, linear-gradient(93deg, #2671b2 0%, #08f 98.33%));
+		padding: 1rem;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			background: url(../img/cards-line.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 99%;
+			z-index: -1;
+			left: 50%;
+			width: 55%;
+			aspect-ratio: 1;
+		}
+	}
+	&:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		.sProfitableRobot-item__inner {
+			&::before {
+				transform: scale(1, -1);
+				top: auto;
+				bottom: 80%;
+			}
+		}
+	}
+	&:nth-child(3) {
+		.sProfitableRobot-item__inner {
+			&::before {
+				top: 80%;
+			}
+		}
+	}
+	&:nth-child(4) {
+		grid-column: 4/ 5;
+		grid-row: 2 /3;
+		z-index: 6;
+		.sProfitableRobot-item__inner {
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	&:nth-child(5) {
+		--linear: #733c9d;
+		grid-column: 4/ 5;
+		grid-row: 1 /2;
+		.sProfitableRobot-item__inner {
+			&::before {
+				transform: rotate(-90deg);
+				left: 0;
+				top: 96%;
+				z-index: 3;
+			}
+		}
+	}
+}

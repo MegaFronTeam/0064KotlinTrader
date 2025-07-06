@@ -1,0 +1,53 @@
+// start .sDespair
+.sDespair {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	&__inner {
+		// aspect-ratio: 1362 / 676;
+		color: #fff;
+		border-radius: 24px;
+		overflow: hidden;
+		font-size: rem(20);
+		@include media-breakpoint-up(lg) {
+			padding: rem(80);
+			display: flex;
+			justify-content: space-between;
+			gap: rem(20);
+			padding-bottom: 250px;
+			.strong {
+				max-width: 300px;
+			}
+			.text-block {
+				max-width: 375px;
+			}
+		}
+		padding: rem(80) rem(20);
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sDespair

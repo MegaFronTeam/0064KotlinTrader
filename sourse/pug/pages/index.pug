@@ -9,24 +9,41 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sCatalog/_sCatalog.pug
 
+include ../blocks/sQA/_sQA.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/s2025/_s2025.pug
+include ../blocks/sPlotes/_sPlotes.pug
+include ../blocks/sDespair/_sDespair.pug
+include ../blocks/sTasks/_sTasks.pug
+include ../blocks/sTitan/_sTitan.pug
+include ../blocks/s4SuperProperties/_s4SuperProperties.pug
+include ../blocks/sProfitableRobot/_sProfitableRobot.pug
+include ../blocks/footer/_footer.pug
+
 block variables
 	- let  mainPage= 'main-page' 
 	- let  bg= 'main.jpg'
 
 block title
 	- let  title= index.head.title
-	title= title
+	title= 'ТИТАН'
 block pagecontent
 	//- +mob-mnu()
 	
-	
-	+parts('header')
+	+topLine
 	main
-		+icon("truck")
+
 		//- iframe( src="https://kinescope.io/e2XNJwJpavG2tdvfcveMaD", width="900", height="500", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
 		+headerBlock 
-		+sCatalog
+		+s2025
+		+sPlotes
+		+sDespair
+		+sTasks
+		+sTitan
+		+s4SuperProperties
+		+sProfitableRobot
+		//- +sCatalog
 		+sForm()
 		+sContact()
-		
-	+parts('footer')
+		+sQA
+	+footer

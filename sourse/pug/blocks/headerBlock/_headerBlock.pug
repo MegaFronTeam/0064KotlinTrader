@@ -1,11 +1,15 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+	+b.headerBlock#headerBlock&attributes(attributes)
+		.container.section
+			+b.section-title
+				h1 ТИТАН
+				.h4 Конструктор торговых роботов <br> без программирования
+			a.btn.btn-primary(href="#sForm") Создать неубиваемого робота
+			div
+				img(src="img/header-img-2.png", alt="").head-img
+				img(src="img/header-img.png", alt="").head-img
+				img(src="img/header-img-3.png", alt="").head-img
+			
+
 	// end headerBlock

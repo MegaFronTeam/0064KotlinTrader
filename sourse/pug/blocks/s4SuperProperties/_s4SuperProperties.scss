@@ -1,0 +1,61 @@
+// start .s4SuperProperties
+.s4SuperProperties {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	iframe {
+		aspect-ratio: 16 / 9;
+		border: none;
+		border-radius: 16px;
+	}
+	p {
+		font-size: rem(20);
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.s4SuperProperties
+
+.s4SuperProperties-item {
+	padding-block: rem(40);
+	&:not(:last-child) {
+		border-radius: 24px;
+		border-bottom: 1px solid var(--Grey3, #e0e4ea);
+	}
+
+	&__title-sm {
+		color: var(--Grey2, #939598);
+		font-size: rem(24);
+		margin-bottom: 1em;
+	}
+}
+
+.s4SuperProperties-sm-item {
+	&__title-sm {
+		color: var(--Grey2, #939598);
+		font-size: rem(20);
+		margin-bottom: 1em;
+	}
+}

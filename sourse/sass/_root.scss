@@ -1,21 +1,18 @@
 :root {
 	--animate-delay: 1.2s;
-	--bs-body-font-size: #{$em-base};
-
-	--sPT: #{rem(80 * 0.5)};
-	--sPB: #{rem(90 * 0.5)};
-	--sTPB: #{rem(40 * 0.5)};
 
 	--fancybox-content-color: var(--bs-body-color);
-	--swiperArrowSize: #{rem(68)};
+	--swiperArrowSize: #{rem(40)};
 	--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
 	--swiperBorderColorDef: var(--bs-primary);
-	--swiperColorDef: var(--bs-primary);
-	--swiperBgDef: #ffffff;
+	--swiperColorDef: #fff;
+	--swiperBgDef: var(--bs-primary);
 
-	--swiperBorderColorDefHover: var(--bs-primary);
+	--swiperBorderColorDefHover: #ffffff;
 	--swiperColorDefHover: var(--bs-primary);
 	--swiperBgDefHover: #ffffff;
+	--dark-card-bg: $gray-950;
+	--accent-color: #{$pink};
 
 	//  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;
@@ -25,12 +22,15 @@
 
 	//  --carousel-button-svg-stroke-width: 2.5;
 	//  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
-
-	@include media-breakpoint-up(md) {
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
-		--sTPB: #{rem(40)};
+	@include media-breakpoint-up(xl) {
+		--bs-body-font-size: 18px;
 	}
+	@include media-breakpoint-up(xxl) {
+		--bs-body-font-size: #{$em-base};
+	}
+	--sPT: #{rem(75)};
+	--sTPB: #{rem(60)};
+	--sPB: #{rem(75)};
 }
 .fancybox__container {
 	--fancybox-bg: rgba(58, 59, 60, 0.77);

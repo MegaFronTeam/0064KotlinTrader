@@ -44,3 +44,12 @@ mixin parts(elem)
 	script.
 		addBlock(`#{elem}`)
 	div(id=`${elem}Wrap`)
+
+
+mixin defSlider()
+	+b.def-slider.def-swiper-js
+		.swiper
+			.swiper-wrapper
+				block
+		+arrow()
+		.swiper-pagination

@@ -1,0 +1,49 @@
+// start .s2025
+.s2025 {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	text-align: center;
+	p {
+		font-size: rem(20);
+		color: var(--Grey, #4d4d4d);
+	}
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	h2 {
+		margin-inline: auto;
+		max-width: 900px;
+	}
+
+	p {
+		margin: 0 auto rem(26);
+		max-width: 800px;
+	}
+	img {
+		max-width: 100%;
+		margin-bottom: rem(40);
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.s2025

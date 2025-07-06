@@ -2,8 +2,11 @@ mixin topLine()
 	// start topLine
 	+b.topLine.section#topLine&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+			+e.row.row
+				.col-md-3.col
+					+e.logo
+						+logo
+				.col-md-3.col-auto.order-md-last.text-end
+					a.btn.btn-sm.btn-outline-dark(href="#sForm") Получить доступ сейчас
+				.col-md.d-none.d-md-block.text-center: .small Торговые роботы, умеющие думать
 	// end topLine

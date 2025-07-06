@@ -1,0 +1,161 @@
+// start .sQA
+.sQA {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+
+	.container {
+		position: relative;
+		z-index: 2;
+		&::after,
+		&::before {
+			/* Ellipse 35 */
+			content: "";
+			z-index: -1;
+			position: absolute;
+			width: 792.03px;
+			height: 792.03px;
+			left: -664.78px;
+			top: 0px;
+			opacity: 0.5;
+			background: #6346e4;
+			filter: blur(445px);
+		}
+
+		&::after {
+			left: auto;
+			left: -700px;
+			top: auto;
+			bottom: -300px;
+		}
+	}
+	@include media-breakpoint-up(md) {
+		--sTPB: #{rem(50)};
+	}
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sQA
+
+.dd-group {
+	// max-width: rem(1140);
+	margin: 0 auto;
+	/* Frame 187 */
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+
+	&__head {
+		cursor: pointer;
+		// font-weight: 500;
+		// line-height: 120%;
+		@include rfs(28px);
+		display: flex;
+		// gap: rem(10);
+		position: relative;
+		color: var(--color, currentColor);
+		// justify-content: space-between;
+		// align-items: center;
+		margin-bottom: 0;
+		text-wrap: balance;
+		.text-secondary {
+			font-size: 1rem;
+		}
+		&:hover {
+			--stroke-w: 2;
+		}
+	}
+	&__arrow {
+		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		width: rem(64px);
+		height: rem(64px);
+		margin-left: auto;
+		/* Accnet */
+		color: $primary;
+		border: 1px solid $primary;
+		border-radius: 35px;
+		box-shadow: 0 0 0 calc(var(--stroke-w, 0) * 1px) $primary;
+		position: relative;
+		@include mt;
+		rotate: var(--rotate, 0);
+
+		// transform: rotate(-90deg);
+
+		/* Inside auto layout */
+		flex: none;
+		order: 1;
+		flex-grow: 0;
+		.icon {
+			fill: none;
+			stroke: currentColor;
+			font-size: 24px;
+			stroke-width: var(--stroke-w, 1);
+			@include mt;
+			@include a-cent1;
+		}
+	}
+	&__item {
+		padding: rem(40px);
+		// padding-right: rem();
+
+		background: rgba(99, 70, 228, 0.1);
+		border-radius: 19px;
+		margin-bottom: 4px;
+		border: 1px solid transparent;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&.active {
+			--rotate: 90deg;
+			--stroke-w: 2;
+			--color: #{$secondary};
+			border-color: $primary;
+		}
+	}
+	&__content {
+		padding: rem(30) 0 rem(20) 0;
+		@include media-breakpoint-up(md) {
+			font-size: rem(20);
+		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.dd-group__content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
