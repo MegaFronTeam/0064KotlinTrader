@@ -5,7 +5,8 @@
 	// --sTPB: #{rem()};
 
 	&__row {
-		// --bs-gutter-x: #{rem()};
+		gap: 30px;
+		--bs-gutter-x: #{rem(0)};
 		--bs-gutter-y: #{rem(60)};
 		margin-bottom: 60px;
 		min-width: 1100px;
