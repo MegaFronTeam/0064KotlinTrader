@@ -30,7 +30,7 @@ function eventHandler() {
 	for (const defSwiper of defSwipers) {
 		new Swiper(defSwiper.querySelector(".swiper"), {
 			slidesPerView: "auto",
-			spaceBetween: 10,
+			spaceBetween: 0,
 			// loop: true,
 			// autoHeight: true,
 			// pagination: {
@@ -44,6 +44,17 @@ function eventHandler() {
 			},
 		});
 	}
+
+	document.querySelector(".sCalc input").addEventListener("input", e => {
+		const val = e.target.value.replace(/\D/g, "");
+		e.target.value = val ? (+val).toLocaleString("ru-RU") : "";
+		document.querySelector("#result").textContent = val
+			? (+val * 21.0063).toLocaleString("ru-RU", {
+					maximumFractionDigits: 0,
+					minimumFractionDigits: 0,
+				})
+			: "";
+	});
 }
 if (document.readyState !== "loading") {
 	eventHandler();

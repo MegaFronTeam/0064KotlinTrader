@@ -5,108 +5,48 @@
 	position: relative;
 	overflow: hidden;
 	z-index: 2;
-	&::before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		max-width: 1500px;
-		aspect-ratio: 1537 / 72;
-		z-index: -1;
-		bottom: 0;
-		left: 50%;
-		transform: translate(-50%, 50%);
-		border-radius: 1537.334px;
-		background: #000;
-		opacity: 0.2;
-
-		filter: blur(85.69999694824219px);
-		overflow: hidden;
-	}
-	// --sTPB: #{rem()};
-	&__col-img {
-		align-self: flex-end;
-	}
-	&__col-list {
-		align-self: center;
-	}
-	&__row {
-		// align-items: center;
-		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
-	}
-	.container {
+	.h3 {
+		padding: var(--sp-base);
+		background: #f5faff;
+		text-align: left;
 	}
 	.section-title {
+		p {
+			font-size: 20px;
+			margin-block: 2rem;
+		}
 	}
-	&__col {
-	}
-	&__item {
-	}
-	ul {
-		padding-block: 2rem;
-	}
-
-	li {
-		list-style: none;
+	&__block {
+		padding: var(--sp-base);
+		background: linear-gradient(93.08deg, #0051ff 0%, #0088ff 98.33%);
+		border-radius: var(--sp-base);
+		color: #fff;
 		position: relative;
-		padding-left: 2em;
 		font-size: 20px;
-		margin-bottom: 1em;
-		&::before {
-			content: url("../img/mark.svg");
+		z-index: 2;
+		img {
 			position: absolute;
-			left: 0;
-			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			max-width: 40%;
 		}
 	}
-	&__sAuthor-img {
-		position: relative;
+	&__text {
+		max-width: 800px;
+		ul {
+			padding-left: rem(20);
+			// text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+		}
 	}
-	&__els {
-		position: relative;
-		margin-inline: auto;
-		// max-width: rem(1000);
-		display: flex;
-		text-align: left;
-		@include media-breakpoint-up(sm) {
-			position: absolute;
-		}
-		gap: 1em;
-		flex-wrap: wrap;
-		// margin-top: -150px;
-		@include media-breakpoint-up(xl) {
-			margin-left: 25%;
-			bottom: 15%;
-		}
-		bottom: 5%;
-		// margin-bottom: 150px;
-	}
-	&__el {
-		width: 100%;
-		max-width: rem(415);
-		border-radius: 16px 16px 16px 0px;
-		background: rgba(255, 255, 255, 0.8);
-		box-shadow: 0px 4px 44.2px 0px rgba(0, 0, 0, 0.14);
-		backdrop-filter: blur(20.049999237060547px);
-		padding: 1em;
-		z-index: 4;
-		position: relative;
-		&:nth-child(2) {
-			margin-right: auto;
-		}
-		&:nth-child(1) {
-			@include media-breakpoint-up(xxl) {
-				position: absolute;
-				bottom: 120%;
-				left: -150px;
-			}
 
-			@include media-breakpoint-up(xl) {
-				position: absolute;
-				bottom: 120%;
-				left: -100px;
-			}
-		}
+	&__success-block {
+		background-color: #29b363;
+		// max-width: 490px;
+		display: inline-block;
+		padding: 22px;
+		border-radius: 16px;
+		margin-block: 1rem;
 	}
 	@include media-breakpoint-up(xl) {
 	}
@@ -122,7 +62,7 @@
 	}
 	@include media-breakpoint-down(xl) {
 		img {
-			max-width: 100%;
+			// max-width: 100%;
 		}
 	}
 } // end.sAuthor

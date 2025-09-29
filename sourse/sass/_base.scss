@@ -121,6 +121,9 @@ main {
 .section-title {
 	margin-bottom: var(--sTPB);
 	color: var(--Grey, #4d4d4d);
+	span {
+		color: $primary;
+	}
 	// text-wrap: balance;
 	img {
 		margin-bottom: 0 !important;
@@ -128,12 +131,6 @@ main {
 	}
 	h2 {
 		color: $primary;
-	}
-	p {
-		border-radius: 16px;
-		background: var(--Grey3, #e0e4ea);
-		padding: 1em;
-		display: inline-block;
 	}
 }
 
@@ -273,17 +270,18 @@ ul {
 	position: relative;
 }
 
+.swiper-button-disabled {
+	opacity: 0.2;
+}
 .swiper-button-hand {
 	width: var(--swiperArrowSize);
 	height: var(--swiperArrowSize);
 	border-radius: 50%;
-	background-color: var(--swiperBgDef);
+	background: var(--swiperBgDef);
 	border: 2px solid var(--swiperBorderColorDef);
 	color: var(--swiperColorDef);
 	@include bgs;
 	outline: none !important;
-	// margin-bottom: 0;
-	background-image: none;
 	margin: 0;
 	@include a-cent(y);
 	box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
@@ -292,9 +290,10 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 50;
 
 	&:hover {
-		background-color: var(--swiperBgDefHover);
+		background: var(--swiperBgDefHover);
 		border-color: var(--swiperBorderColorDefHover);
 		color: var(--swiperColorDefHover);
 	}
@@ -316,19 +315,6 @@ ul {
 	&-prev {
 		left: var(--swiperArrowPosition);
 	}
-}
-
-.swiper-button-hand {
-	// --swiperBgDef: #{$pink};
-	// --swiperColorDef: #{$body-color};
-	// --swiperBorderColorDef: #{$pink};
-
-	// --swiperBgDefHover: #{$red};
-	// --swiperBorderColorDefHover: #{$red};
-	// --swiperColorDefHover;
-	z-index: 50;
-	// border: 2px solid var(--swiperBorderColorDef);
-	border-radius: rem(16);
 }
 
 .swiper-pagination {
@@ -444,6 +430,9 @@ iframe {
 	// @include row-sw(10px, sm, 100px);
 }
 
+// .btn-primary {
+// 	background: linear-gradient(93.08deg, #0051ff 0%, #0088ff 98.33%);
+// }
 // .btn-outline-light,
 // .btn-outline-primary{
 // 	--bs-btn-color: #{$body-color};
@@ -487,13 +476,14 @@ iframe {
 	position: relative;
 	z-index: 2;
 	box-shadow: 0px 18px 64.1px 0px rgba(0, 102, 255, 0.47);
+	color: #fff !important;
 	&::before {
 		content: "";
 		inset: 0;
 		position: absolute;
 		border-radius: inherit;
 		z-index: -1;
-		background: var(--linear, linear-gradient(93deg, #2671b2 0%, #08f 98.33%));
+		background: linear-gradient(93.08deg, #0051ff 0%, #0088ff 98.33%);
 		opacity: var(--op, 1);
 	}
 	&:hover {
@@ -549,7 +539,7 @@ iframe {
 }
 
 .form-control {
-	border-width: 0 0 1px 0;
+	// border-width: 0 0 1px 0;
 	margin-bottom: 1em;
 	text-align: center;
 }

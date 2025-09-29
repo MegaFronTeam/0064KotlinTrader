@@ -1,0 +1,109 @@
+// start .sAboutAuthor
+.sAboutAuthor {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	background: linear-gradient(196.95deg, #006fff 0.6%, #004299 100.95%);
+	@include media-breakpoint-up(sm) {
+		border-radius: 80px;
+	}
+	border-radius: 20px;
+	color: #fff;
+	h3,
+	h2 {
+		color: #fff;
+	}
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	&__block {
+		border-radius: var(--sp-base);
+		background-color: #fff;
+		font-size: 20px;
+		ul {
+			padding-left: 20px;
+		}
+		.imgg {
+			@include media-breakpoint-up(sm) {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				max-width: 40%;
+			}
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		// padding-right: 30%;
+	}
+
+	&__block {
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		max-width: 636px;
+	}
+	&__body {
+		padding: var(--sp-base);
+		position: relative;
+		border-radius: var(--sp-base);
+	}
+	&__body--row {
+		border-radius: 0 0 var(--sp-base) var(--sp-base);
+		display: flex;
+		gap: 20px;
+		img {
+			position: relative;
+			max-width: calc(16% - 14px);
+			&:not(:first-child) {
+				max-width: calc(28% - 14px);
+				@include media-breakpoint-up(xl) {
+				}
+				// max-width: 25%;
+			}
+			object-fit: cover;
+		}
+	}
+
+	&__body--2 {
+		.imgg {
+			@include media-breakpoint-up(sm) {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -15%;
+				max-width: 70%;
+				pointer-events: none;
+			}
+			max-width: 100%;
+		}
+	}
+
+	em {
+		font-style: italic;
+		font-weight: 400;
+		opacity: 0.5;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sAboutAuthor

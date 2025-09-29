@@ -5,24 +5,24 @@
 	position: relative;
 	z-index: 2;
 
-	&::before {
-		/* Ellipse 35 */
-		content: "";
-		z-index: -1;
-		position: absolute;
-		width: 100%;
-		aspect-ratio: 1920 / 1710;
-		bottom: 0;
-		left: 0;
-		pointer-events: none;
-		background: linear-gradient(
-			180deg,
-			rgba(255, 255, 255, 0) 69.47%,
-			rgba(255, 149, 0, 0.27) 100%
-		);
-		.container {
-		}
-	}
+	// &::before {
+	// 	/* Ellipse 35 */
+	// 	content: "";
+	// 	z-index: -1;
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	aspect-ratio: 1920 / 1710;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	pointer-events: none;
+	// 	background: linear-gradient(
+	// 		180deg,
+	// 		rgba(255, 255, 255, 0) 69.47%,
+	// 		rgba(255, 149, 0, 0.27) 100%
+	// 	);
+	// 	.container {
+	// 	}
+	// }
 	@include media-breakpoint-up(lg) {
 		padding: rem(44) 0 rem(120);
 	}

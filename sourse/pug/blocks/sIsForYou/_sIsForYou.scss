@@ -1,0 +1,48 @@
+// start .sIsForYou
+.sIsForYou {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(40)};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	font-size: 20px;
+	&__item {
+		padding: var(--sp-base);
+		border-radius: var(--sp-base);
+		height: 100%;
+		&--s {
+			background: #f5fff9;
+		}
+		&--d {
+			background: #fff5fc;
+		}
+		ul {
+			padding-left: 20px;
+		}
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sIsForYou

@@ -6,13 +6,15 @@
 	--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
 	--swiperBorderColorDef: var(--bs-primary);
 	--swiperColorDef: #fff;
-	--swiperBgDef: var(--bs-primary);
+	--swiperBgDef: linear-gradient(93.08deg, #0051ff 0%, #0088ff 98.33%);
 
 	--swiperBorderColorDefHover: #ffffff;
 	--swiperColorDefHover: var(--bs-primary);
 	--swiperBgDefHover: #ffffff;
 	--dark-card-bg: $gray-950;
 	--accent-color: #{$pink};
+
+	--sp-base: #{rem(20)};
 
 	//  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;
@@ -22,8 +24,11 @@
 
 	//  --carousel-button-svg-stroke-width: 2.5;
 	//  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
+	@include media-breakpoint-up(sm) {
+		--sp-base: #{rem(40)};
+	}
 	@include media-breakpoint-up(xl) {
-		--bs-body-font-size: 18px;
+		// --bs-body-font-size: 20px;
 	}
 	@include media-breakpoint-up(xxl) {
 		--bs-body-font-size: #{$em-base};

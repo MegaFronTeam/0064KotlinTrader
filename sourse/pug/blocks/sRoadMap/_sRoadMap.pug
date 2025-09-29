@@ -1,0 +1,81 @@
+mixin sRoadMap(data)
+	// start sRoadMap
+	+b.SECTION.sRoadMap.section#sRoadMap&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3 Я показываю это не ради похвалы.
+				p Я показываю, чтобы Вы понимали: мой опыт — реальный и проверенный рынком. <br> И именно этот опыт Вы получите в обучении.
+				
+			h3 Смотрите таймлайн как я достиг доходности счета +1411%
+			.def-swiper.def-swiper-js
+				+e.slider--js.swiper
+					.swiper-wrapper
+						+e.slide.swiper-slide
+							+e.header
+								+e.title--lg 5 <br> декабря <br> 2024
+							div
+								+e.label 20 000$.
+							+e.footer
+								.h3.text-primary Ввод на счет 20’000$.
+						mixin slide(v,t,l)
+							+e.slide.swiper-slide
+								+e.header
+									+e.video
+										iframe(width="560" height="315" loading="lazy" src=v title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen )
+									+e.H3.title!= t
+								div
+									+e.label!= l
+								if block
+									+e.footer
+										block
+						+slide("https://kinescope.io/rst2H7QM1Sn4x5mjvhfcr3","5 марта 2025.","+40’474$ +222,19%")
+							p Вывел со счета 10’000$ в качестве вознаграждения себе.
+						+slide("https://kinescope.io/rWE2sdUYJVwSkSVjk2vcuz","4 апреля 2025.","+25’000$ ")
+						+slide("https://kinescope.io/cNjCc8t175pK2sWXrrbnh1","17 апреля 2025.","+84’452$ +518,19%")
+						+slide("https://kinescope.io/gTTpVRZEsSp7MVf7cE2GTw","28 апреля 2025.","+3’448$")
+						+slide("https://kinescope.io/9WusaXxrjXKQaQ3DheQgLq","30 апреля 2025","+2’180$")
+						+slide("https://kinescope.io/gQiXDVZbi99fDNKVxPGhdR","2 мая 2025.","+1’709$")
+						+slide("https://kinescope.io/0p29FqbSFn82hFQTKdkYMV","19 мая 2025.","+2’925$")
+
+						+slide("https://kinescope.io/dYHd3cySuM6GP1Ujtfs268","19 мая 2025.","+89’300$ +552%")
+							p Отчет по счету, 5,5 месяцев торгов.
+						+slide("https://kinescope.io/aJk5igmmGk1yzzP5hRoK9o","23 мая 2025","+14’822$")
+						+slide("https://kinescope.io/fiUJDo55PoF3LmRk4Q78Jt","26 мая 2025","+104’126$ +667%")
+							p Отчет по счету, 5,5 месяцев торгов.
+						+slide("https://kinescope.io/cExXmGBHLKmW4Gyqcf3tk5","8 июля 2025","+15’535$")
+							p Запись сделки в реальном времени.
+
+						+slide("https://kinescope.io/rK3YQeMP7feNTQaVxAvN4H","17 июля 2025","+5’000$")
+							p Запись сделки в реальном времени.
+						+slide("https://kinescope.io/2tms9FaNyDTurDjn3FZ12B","29 июля 2025","14’566$")
+							p Запись сделки в реальном времени.
+						+slide("https://kinescope.io/t5eehEMH9NRSRa854Ach6G","1 августа 2025","+141’680$ +995%")
+							p Запись сделки в реальном времени.
+						+slide("https://kinescope.io/bhFSDsQ8ERrhba6UGwNqER","1 августа 2025","+ 19’417 $")
+						+slide("https://kinescope.io/tFhVcC5VAVuMtYs2RgVcp3","4 августа 2025","+168’988$ +1231%")
+							p Сделка по EURUSD принесла #[span 7’890$. ]
+							p Запись сделки в реальном времени.
+
+						+slide("https://kinescope.io/pXupgsAW1VE4bFJvFPRxiZ","8 августа 2025","+180’041$ +1329%")
+							p Заработал за неделю 11’053$ по золоту! 
+							p Запись сделки в реальном времени.
+
+						+slide("https://kinescope.io/wCgbcmr2g2XdamWSi5CePR","11 августа 2025","+188’420$ +1404%")
+							p +8’379$ за неделю по паре GBPUSD!
+							p Запись сделки в реальном времени.
+
+						+slide("https://kinescope.io/wCgbcmr2g2XdamWSi5CePR","4 сентября 2025","+190’063$ +1411%")
+							p Отчет по счету. 9 месяцев торгов.
+				+arrow()
+
+			+e.block--success
+				p Итого за 9 месяцев из начальной суммы 20’000$ получено 
+				.h3 +190’063 $ чистой прибыли
+			+e.block
+				div
+					h3 Прозрачность здесь и сейчас
+					p Каждый шаг подтверждён брокерским отчётом
+				a.btn.btn-outline-primary(href="#") 
+					img(src="img/icon_documents.svg", alt="")
+					| Посмотреть брокерский стейтмент
+	// end sRoadMap

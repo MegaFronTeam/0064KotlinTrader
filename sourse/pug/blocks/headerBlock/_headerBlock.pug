@@ -3,13 +3,20 @@ mixin headerBlock()
 	+b.headerBlock#headerBlock&attributes(attributes)
 		.container.section
 			+b.section-title
-				h1 ТИТАН
-				.h4 Конструктор торговых роботов <br> без программирования
-			a.btn.btn-primary(href="#sForm") Создать неубиваемого робота
-			div
-				img(src="img/header-img-2.png", alt="").head-img
-				img(src="img/header-img.png", alt="").head-img
-				img(src="img/header-img-3.png", alt="").head-img
+				h1 Система
+			+e.row--lg
+				+e.item--lg Тренд
+				+e.item--lg Паттерн
+				+e.item--lg Сигнал
+				
+			.h4 Учитесь трейдингу на реальных сделках в формате «Повтори за мной»
+			+e.row--sm
+				+e.item--sm Я объясняю  каждое решение
+				+e.item--sm Вы повторяете шаги в&nbsp;реальном времени
+				+e.item--sm Накапливаете бесценный опыт
+				+e.item--sm Начинаете видеть рынок по-новому
+			a.btn.btn-primary(href="#sForm") Начать обучение с наставником
+			img(src="img/header-img.png", alt="").head-img
 			
 
 	// end headerBlock

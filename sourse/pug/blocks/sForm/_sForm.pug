@@ -5,11 +5,26 @@ mixin sForm()
 			+img("img/sForm-bg.jpg",'bg').picture-bg
 			
 			.container
-				
+				.text-center.mb-4
+					h2 Всё решает один шаг 🚀
+					h3 Доступ к системе «Тренд. Паттерн. Сигнал», к обучению и к закрытому Телеграм-каналу — всего в одном шаге от Вас.
+				+e.row.row
+					+e.col.col-lg-3.col-6
+						+e.item
+							p Заполняете форму ниже → выбираете удобный вариант участия
+					+e.col.col-lg-3.col-6
+						+e.item
+							p Сразу после оплаты получаете моментальный доступ
+					+e.col.col-lg-3.col-6
+						+e.item
+							p Уже через пару минут Вы в закрытом Телеграм-канале и в обучающей группе Инфоклуба
+					+e.col.col-lg-3.col-6
+						+e.item
+							p Начинаете путь: первые видеоуроки и первые сделки вместе со мной
+				br
+				.text-center.h3 Между Вами и результатом всего один шаг. <br> Сделайте его сейчас
+				br
 				+b.form-wrap#sForm
-						.text-center.mb-4
-							h2 Ваш Титан ждет своего запуска!
-							h3 Введите Ваши данные в форму, выберите пакет доступа  к Титану и начните создавать свою уникальную армию  торговых роботов прямо сейчас.
 						<div id="bf349" class="inbfrm v2">
 							<div id="bf349_inner"> 
 								<form id="bf349_form" action="//info-dvd.ru/bbm/order/price_table_null_tradingvisionpro/?bform_id=349" method="POST" accept-charset="windows-1251" onsubmit="return bf349.check();" >
@@ -18,18 +33,28 @@ mixin sForm()
 									<input type="hidden" name="comment_author" value="">
 									<input type="hidden" name="comment_text" value="">
 									<input type="hidden" name="promocode" value="">
-									<div class="form-grid ">
+									<div class="form-grid row gx-3 gy-3">
+								
+									<div class="col-lg-4"> 
 										<div class="input_line form-group "> 
+											<label class="input-label">Ваше имя</label>
 											<input name="fullname" type="text" class="text form-control" value="" placeholder="Ваше имя" required="required"/>
 										</div>
-										<div class="input_line form-group "> 
+									</div>
+									<div class="col-lg-4">
+										<div class="input_line form-group ">  
+											<label class="input-label">Номер телефона</label>
 											<input name="phone" type="text" class="text form-control" value="" placeholder="+7 (____)____-___-___" required="required"/>
 										</div>
+									</div>
+									<div class="col-lg-4">
 										<div class="input_line form-group "> 
+											<label class="input-label">E-mail</label>
 											<input name="email" type="email" class="text form-control" value="" placeholder="E-mail (необязательно)" required="required"/>
 										</div>
-										<div class="submit_line">
-											<button type="submit" class="button btn btn-white" name="submit" > Отправить</button>
+									</div>
+										<div class="submit_line col-12">
+											<button type="submit" class="button btn btn-success w-100" name="submit" > Отправить</button>
 										</div>
 									</div>
 
@@ -85,7 +110,4 @@ mixin sForm()
 									phone_verification: false});
 								});
 							}, 0);
-				+e.img-wrap.d-none.d-lg-block
-					img(src="img/header-img-2-1.png", alt="").res-i
-					img(src="img/header-img.png", alt="").res-i
 	// end sForm

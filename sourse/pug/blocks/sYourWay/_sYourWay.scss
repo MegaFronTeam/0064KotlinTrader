@@ -1,0 +1,43 @@
+// start .sYourWay
+.sYourWay {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(40)};
+		margin-bottom: 40px;
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+		height: 100%;
+		background: #f5faff;
+		padding: var(--sp-base);
+		border-radius: var(--sp-base);
+		font-size: 20px;
+		ul {
+			padding-left: 20px;
+		}
+	}
+	.btn {
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sYourWay

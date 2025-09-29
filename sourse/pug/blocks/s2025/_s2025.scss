@@ -16,20 +16,48 @@
 	}
 	h2 {
 		margin-inline: auto;
-		max-width: 900px;
+		// max-width: 900px;
 	}
 
 	p {
 		margin: 0 auto rem(26);
-		max-width: 800px;
+		// max-width: 800px;
 	}
 	img {
 		max-width: 100%;
-		margin-bottom: rem(40);
+		margin-bottom: var(--sp-base);
 	}
 	&__col {
 	}
 	&__item {
+	}
+
+	&__block {
+		background: #f5faff;
+		padding: var(--sp-base);
+		border-radius: var(--sp-base);
+		margin-bottom: var(--sp-base);
+		img {
+			/* 1 */
+			box-shadow: 0px 4px 155.5px 19px rgba(70, 84, 140, 0.09);
+			border-radius: 24px;
+			margin-block: var(--sp-base);
+		}
+	}
+	&__item {
+		padding: rem(10) var(--sp-base);
+		min-height: rem(86);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		border: 1px solid;
+		border-radius: rem(100);
+		text-align: left;
+		.text {
+			font-size: rem(32);
+			text-wrap: nowrap;
+		}
 	}
 
 	@include media-breakpoint-up(xl) {

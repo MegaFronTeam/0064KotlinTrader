@@ -3,30 +3,40 @@ extends ../layout/main.pug
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
- 
-include ../blocks/sContact/_sContact.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sForm/_sForm.pug
 include ../blocks/sCatalog/_sCatalog.pug
 
 include ../blocks/sQA/_sQA.pug
 include ../blocks/topLine/_topLine.pug
 include ../blocks/s2025/_s2025.pug
+include ../blocks/sUnreal/_sUnreal.pug
+include ../blocks/sAuthor/_sAuthor.pug
+include ../blocks/sRoadMap/_sRoadMap.pug
+include ../blocks/sStudy/_sStudy.pug
+include ../blocks/sCalc/_sCalc.pug
+include ../blocks/sProfitFromStudy/_sProfitFromStudy.pug
+include ../blocks/sSystem/_sSystem.pug
+include ../blocks/sBenefits/_sBenefits.pug
+include ../blocks/sYourWay/_sYourWay.pug
+include ../blocks/sPlace/_sPlace.pug
+include ../blocks/sAboutAuthor/_sAboutAuthor.pug
+include ../blocks/sIsForYou/_sIsForYou.pug
+include ../blocks/sInTheEnd/_sInTheEnd.pug
+include ../blocks/sTransparent/_sTransparent.pug
+
 include ../blocks/sPlotes/_sPlotes.pug
 include ../blocks/sDespair/_sDespair.pug
-include ../blocks/sTasks/_sTasks.pug
-include ../blocks/sTitan/_sTitan.pug
-include ../blocks/s4SuperProperties/_s4SuperProperties.pug
-include ../blocks/sProfitableRobot/_sProfitableRobot.pug
-include ../blocks/sStartRobots/_sStartRobots.pug
-include ../blocks/sProfitsSetting/_sProfitsSetting.pug
-include ../blocks/sChanges/_sChanges.pug
-include ../blocks/sAuthor/_sAuthor.pug
-include ../blocks/sSwitchToTitan/_sSwitchToTitan.pug
-include ../blocks/sPrivateProfit/_sPrivateProfit.pug
-include ../blocks/sBenefits/_sBenefits.pug
-include ../blocks/sHelpCry/_sHelpCry.pug
-include ../blocks/sWithTitanToday/_sWithTitanToday.pug
+include ../blocks/sCleverExperiment/_sCleverExperiment.pug
+//- include ../blocks/sTasks/_sTasks.pug
+//- include ../blocks/sTitan/_sTitan.pug
+//- include ../blocks/s4SuperProperties/_s4SuperProperties.pug
+//- include ../blocks/sProfitableRobot/_sProfitableRobot.pug
+//- include ../blocks/sStartRobots/_sStartRobots.pug
+//- include ../blocks/sProfitsSetting/_sProfitsSetting.pug
+//- include ../blocks/sChanges/_sChanges.pug
+//- include ../blocks/sSwitchToTitan/_sSwitchToTitan.pug
+//- include ../blocks/sPrivateProfit/_sPrivateProfit.pug
+//- include ../blocks/sHelpCry/_sHelpCry.pug
+//- include ../blocks/sWithTitanToday/_sWithTitanToday.pug
 include ../blocks/footer/_footer.pug
 
 block variables
@@ -35,7 +45,7 @@ block variables
 
 block title
 	- let  title= index.head.title
-	title= 'ТИТАН'
+	title= 'Котлин'
 block pagecontent
 	//- +mob-mnu()
 	
@@ -45,21 +55,35 @@ block pagecontent
 		//- iframe( src="https://kinescope.io/e2XNJwJpavG2tdvfcveMaD", width="900", height="500", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
 		+headerBlock 
 		+s2025
-		+sPlotes
-		+sDespair
-		+sTasks
-		+sTitan
-		+s4SuperProperties
-		+sProfitableRobot
-		+sStartRobots
-		+sProfitsSetting
-		+sChanges
-		+sAuthor
-		+sSwitchToTitan
-		+sPrivateProfit
+		+sUnreal
+		.bg(style="background: linear-gradient(180deg, #FFFFFF 0%, #F1F6FC 100%);border-radius: var(--sp-base);")
+			+sAuthor
+			+sRoadMap 
+		+sStudy
+		+sCalc
+		+sProfitFromStudy
+		+sSystem
 		+sBenefits
+		+sYourWay
+		//- сделать блок
+		//- +sPlace 
+		+sAboutAuthor
+		+sIsForYou
+		+sInTheEnd
+		//- +sPlotes
+		//- +sDespair
+		//- +sTasks
+		//- +sTitan
+		//- +s4SuperProperties
+		//- +sStartRobots
+		//- +sProfitsSetting
+		//- +sChanges
+		//- +sSwitchToTitan
+		//- +sPrivateProfit
 		+sForm()
+		//- +sHelpCry()
+		//- +sWithTitanToday
 		+sQA
-		+sHelpCry()
-		+sWithTitanToday
+		+sTransparent
+		+sCleverExperiment
 	+footer

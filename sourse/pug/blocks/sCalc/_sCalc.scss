@@ -1,0 +1,135 @@
+// start .sCalc
+.sCalc {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	background: linear-gradient(180deg, #ffffff 0%, #f1f6fc 100%);
+	border-radius: 40px;
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	p {
+		font-size: 20px;
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+	&__inner {
+		padding: var(--sp-base);
+		margin-bottom: var(--sp-base);
+		&::before {
+			border-top: 1px solid #000;
+			border-left: 1px solid #000;
+			top: 0;
+			left: 0;
+		}
+		&::after {
+			border-bottom: 1px solid #000;
+			border-right: 1px solid #000;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	&__inner,
+	&__inner-border {
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			height: 40px;
+			width: 40px;
+			pointer-events: none;
+		}
+	}
+	&__inner-border {
+		position: absolute;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		pointer-events: none;
+		&::before {
+			border-bottom: 1px solid #000;
+			border-left: 1px solid #000;
+			bottom: 0;
+			left: 0;
+		}
+		&::after {
+			border-top: 1px solid #000;
+			border-right: 1px solid #000;
+			top: 0;
+			right: 0;
+		}
+	}
+	label {
+		width: 100%;
+		position: relative;
+		font-size: 32px;
+	}
+	input {
+		color: #000 !important;
+		font-size: 32px;
+		border-radius: rem(40);
+		border: 1px solid #000;
+		text-align: left;
+		padding-top: 1.5rem;
+		padding-inline: 32px;
+		&::placeholder {
+			color: #000;
+			opacity: 0.5;
+		}
+	}
+	.sCalc__input-title {
+		position: absolute;
+		font-size: 12px;
+		padding-left: 32px;
+		margin-top: 5px;
+		pointer-events: none;
+		font-size: 12px;
+	}
+	.currency {
+		right: 32px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		top: 35%;
+	}
+
+	&__result {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+		min-height: 70px;
+		padding: 0 20px;
+		position: relative;
+		z-index: 2;
+		border-radius: rem(40);
+		margin-bottom: var(--sp-base);
+		flex-wrap: wrap;
+		.text-primary {
+			font-size: 32px;
+			font-weight: bold;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sCalc
