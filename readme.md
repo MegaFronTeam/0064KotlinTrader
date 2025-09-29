@@ -1,4 +1,4 @@
 ### Pages
 
-1. <https://megafronteam.github.io/0063TitanTrader/>
-2. <https://megafronteam.github.io/0063TitanTrader/00-modal.html>
+1. <https://megafronteam.github.io/0064KotlinTrader/>
+2. <https://megafronteam.github.io/0064KotlinTrader/00-modal.html>
