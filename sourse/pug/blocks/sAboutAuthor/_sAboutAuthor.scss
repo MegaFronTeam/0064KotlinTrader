@@ -3,6 +3,10 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	font-size: 20px;
+	ul {
+		padding-left: 20px;
+	}
 
 	background: linear-gradient(196.95deg, #006fff 0.6%, #004299 100.95%);
 	@include media-breakpoint-up(sm) {
@@ -15,7 +19,9 @@
 		color: #fff;
 	}
 	&__row {
-		// --bs-gutter-x: #{rem()};
+		&--lg {
+			--bs-gutter-x: #{rem(70)};
+		}
 		// --bs-gutter-y: #{rem()};
 	}
 	.section-title {
@@ -62,9 +68,12 @@
 		border-radius: 0 0 var(--sp-base) var(--sp-base);
 		display: flex;
 		gap: 20px;
-		img {
+		.img-wrap {
 			position: relative;
 			max-width: calc(16% - 14px);
+			img {
+				max-width: 100%;
+			}
 			&:not(:first-child) {
 				max-width: calc(28% - 14px);
 				@include media-breakpoint-up(xl) {

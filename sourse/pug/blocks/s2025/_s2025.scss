@@ -58,6 +58,41 @@
 			font-size: rem(32);
 			text-wrap: nowrap;
 		}
+		&--l {
+			text-align: center;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			p {
+				margin-bottom: 0;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: -20px;
+				width: 40px;
+				height: 40px;
+				background-color: $danger;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&__img-wrap {
+		display: inline-block;
+		position: relative;
+		.arrow-success {
+			position: absolute;
+			right: 14%;
+			top: -5%;
+			box-shadow: none;
+			// mix-blend-mode: soft-light;
+		}
 	}
 
 	@include media-breakpoint-up(xl) {

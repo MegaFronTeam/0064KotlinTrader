@@ -69,10 +69,13 @@
 		border-radius: rem(40);
 		margin-bottom: rem(40);
 		min-height: 100%;
-		text-wrap: balance;
 		ul {
 			padding-left: rem(20);
 			font-size: 20px;
+			// text-wrap: balance;
+		}
+		li {
+			margin-bottom: 0.5em;
 		}
 		&--bg {
 			background-image: url(../img/block-bg.jpg);

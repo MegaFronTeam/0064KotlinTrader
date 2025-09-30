@@ -3,26 +3,74 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	
-	&__row{
+	font-size: 20px;
+	ul {
+		padding-left: 20px;
+	}
+
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-		
+	&__col {
 	}
-	&__item{
-		
+	&__item {
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	&__block {
+		border-radius: var(--sp-base);
+		@include media-breakpoint-up(xl) {
+			display: flex;
+		}
+		background: #f5faff;
+		overflow: hidden;
+	}
+	&__col {
+		padding: var(--sp-base);
+		&--left {
+			flex-grow: 1;
+			.row {
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 5px;
+			}
+		}
+		&--right {
+			@include media-breakpoint-up(xl) {
+				max-width: 467px;
+			}
+		}
+	}
+
+	&__col-sm {
+		@include media-breakpoint-up(lg) {
+			max-width: rem(270);
+		}
+	}
+
+	.primary-label {
+		display: inline-block;
+		background: var(--bs-primary);
+		color: #fff;
+		font-weight: 600;
+		padding: rem(5) rem(15);
+		border-radius: rem(100);
+		margin: 5px 2px;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sPlace

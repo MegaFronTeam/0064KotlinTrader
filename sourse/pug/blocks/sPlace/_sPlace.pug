@@ -3,7 +3,63 @@ mixin sPlace(data)
 	+b.SECTION.sPlace.section#sPlace&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sPlace
+				h2 Где торгуем: от валют  <br> до крипты и фьючерсов
 				
+			h3 Когда меня спрашивают: «На каких рынках применима стратегия?» <br> Отвечаю просто: там, где есть тренды.
 			+e.row.row
+
+			p Хотите — начинайте только с удобных для Вас активов. Например, можно стартовать с фьючерсов Мосбиржи, а остальные инструменты анализировать в «виртуальном режиме» для наработки насмотренности.
+			br
+			
+			+e.block
+				+e.col--left
+					h3 Мой текущий список для наблюдения:
+					.row
+						+e.col-sm.col-lg Валютные пары: 
+						.col
+							.primary-label EURUSD
+							.primary-label GBPUSD
+							.primary-label USDJPY
+							.primary-label USDCAD
+					.row
+						+e.col-sm.col-lg Металлы:
+						.col
+							.primary-label золото (XAUUSD)
+							.primary-label серебро (XAGUSD)
+					.row
+						+e.col-sm.col-lg Энергетика
+						.col
+							.primary-label нефть BRENT
+					.row
+						+e.col-sm.col-lg Криптовалюты:
+						.col
+							.primary-label Bitcoin (BTCUSDT)
+							.primary-label Ethereum (ETHUSDT)
+					.row
+						+e.col-sm.col-lg Фьючерсы на Мосбирже: 
+						.col
+							.primary-label RTS
+							.primary-label MX
+							.primary-label ED
+							.primary-label SI
+							.primary-label SR
+							.primary-label GOLD
+							.primary-label SILV
+					.row
+						+e.col-sm.col-lg Реже индексы: 
+						.col
+							.primary-label S&P500
+							.primary-label Nasdaq
+				+e.col--right.bg-primary.text-white
+					h3 Чтобы охватить все эти инструменты, достаточно иметь всего два счёта:
+					ul
+						li у российского брокера (для срочного рынка),
+						li у иностранного Форекс-брокера.
+
+			.text-center
+				br
+
+				h3 Когда меня спрашивают: «На каких рынках применима стратегия?» <br> Отвечаю просто: там, где есть тренды.
+				br
+				a.btn.btn-primary(href="#sForm") Хочу торговать там, где есть тренды 
 	// end sPlace
